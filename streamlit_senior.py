@@ -12,7 +12,7 @@ st.markdown("## 시니어케어맵: 서울시 지역별 고령층 고수요 질�
 st.sidebar.header('지역구 선택')
 
 # GeoJSON 파일 경로
-geojson_filepath = 'D:\\Webproject\\seoul_municipalities_geo_simple.json'
+geojson_filepath = 'seoul_municipalities_geo_simple.json'
 
 # 서울시 경계 데이터 로드
 try:
