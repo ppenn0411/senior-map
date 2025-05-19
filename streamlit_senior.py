@@ -18,7 +18,7 @@ st.markdown("### 서울시 고령층 만성질환자 의료 접근성 해소를 
 st.markdown("---") # 타이틀 아래 구분선 추가
 
 # 데이터 로드
-geojson_filepath = 'D:\\Webproject\\seoul_municipalities_geo_simple.json'
+geojson_filepath = 'seoul_municipalities_geo_simple.json'
 seoul_geo_data = gpd.read_file(geojson_filepath)
 district_names = seoul_geo_data['name'].unique().tolist()
 
