@@ -210,7 +210,14 @@ elif current_page_value == "page1":
             <h2></h2>
         </div>
     """, unsafe_allow_html=True)
-    st.write("이곳은 첫 번째 페이지입니다.")
+    # 이곳은 첫 번째 페이지입니다. 대신 iframe 삽입
+    st.markdown(
+        '''
+        <div style="display: flex; justify-content: center;">
+        <iframe title="page1" width="95%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiOWJiN2QyNGUtNjIxOC00NTI2LTk1ZWYtMmI2MzY3ZWY5ODg4IiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        ''', unsafe_allow_html=True
+    )
 
 elif current_page_value == "page2":
     # 페이지 2 헤더에 검정색 배경 박스 추가
@@ -224,7 +231,14 @@ elif current_page_value == "page2":
             <h2></h2>
         </div>
     """, unsafe_allow_html=True)
-    st.write("이곳은 두 번째 페이지입니다.")
+    # 이곳은 두 번째 페이지입니다. 대신 iframe 삽입
+    st.markdown(
+        '''
+        <div style="display: flex; justify-content: center;">
+        <iframe title="page3" width="95%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiZTBjZjNhYTctYmQ2Mi00ZDk3LWI3MjAtYThkOTM4ZTI1MjE2IiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        ''', unsafe_allow_html=True
+    )
 
 elif current_page_value == "page3":
     # 페이지 3 헤더에 검정색 배경 박스 추가
@@ -238,7 +252,14 @@ elif current_page_value == "page3":
             <h2></h2>
         </div>
     """, unsafe_allow_html=True)
-    st.write("이곳은 세 번째 페이지입니다.")
+    # 이곳은 세 번째 페이지입니다. 대신 iframe 삽입
+    st.markdown(
+        '''
+        <div style="display: flex; justify-content: center;">
+        <iframe title="page3" width="95%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiOGMyZGZiNjgtY2Y1My00Njc2LWJkNzMtNmYxNmU5NWMxYzFiIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        ''', unsafe_allow_html=True
+    )
 
 elif current_page_value == "page4":
     # 페이지 4 헤더에 검정색 배경 박스 추가
