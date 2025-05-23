@@ -24,7 +24,7 @@ def set_png_as_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-st.set_page_config(page_title="다중 페이지 앱", layout="wide")
+st.set_page_config(page_title="한눈맵65+", layout="wide")
 
 # 사용자 지정 CSS 스타일 (버튼 가로 스크롤, 세로 크기 조절, 컨테이너 배경색, 제목 및 버튼 텍스트 줄바꿈 방지를 위한 수정)
 st.markdown(
