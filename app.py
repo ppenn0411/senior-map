@@ -256,7 +256,7 @@ elif current_page_value == "page4":
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
-        <iframe title="page4" width="95%" height="680" src="https://app.powerbi.com/view?r=eyJrIjoiOTk2NjU5OGEtYjQ1Zi00OGE4LWI4NmItNjFmMjA4NjY0MDJhIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="page4" width="95%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiODdmOTQ1NzEtYWIwMy00ZjYyLTg5ZWYtM2Q3ZGIyODliYjgzIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
         ''', unsafe_allow_html=True
     )
