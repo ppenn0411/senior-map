@@ -252,4 +252,11 @@ elif current_page_value == "page4":
             <h2></h2>
         </div>
     """, unsafe_allow_html=True)
-    st.write("이곳은 네 번째 페이지입니다.")
+    # 이곳은 네 번째 페이지입니다. 대신 iframe 삽입
+    st.markdown(
+        '''
+        <div style="display: flex; justify-content: center;">
+        <iframe title="page4" width="95%" height="680" src="https://app.powerbi.com/view?r=eyJrIjoiOTk2NjU5OGEtYjQ1Zi00OGE4LWI4NmItNjFmMjA4NjY0MDJhIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        ''', unsafe_allow_html=True
+    )
