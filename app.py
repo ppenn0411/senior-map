@@ -228,6 +228,18 @@ if current_page_value == "main":
         <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
     </div>
     """
+    # 사이드바 이미지 추가
+    img_base64_sidebar = get_base64_of_bin_file("side_image.png")  # 사이드바용 이미지 파일명
+    html_img_sidebar = f"""
+    <div style="
+        background-color: black;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    ">
+        <img src="data:image/png;base64,{img_base64_sidebar}" style="max-width: 100%; height: auto;" />
+    </div>
+    """
     st.markdown(html_img, unsafe_allow_html=True)
     
 
