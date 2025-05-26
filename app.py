@@ -198,11 +198,12 @@ if current_page_value == "main":
         margin-bottom: 15px;
         text-align: center;
     ">
-       st.image("xndx8.png", use_column_width=True)
+        <img src="xndx8.png" style="max-width: 100%; height: auto;" />
     </div>
     """, unsafe_allow_html=True)
 
     st.write("이곳은 메인 페이지입니다.")
+
 
 
 elif current_page_value == "page1":
