@@ -40,14 +40,6 @@ st.markdown(
             text-align: center; /* 제목 가운데 정렬 */
         }
         
-        /* 버튼을 감싸는 div를 flex로 가운데 정렬 */
-        div.stButton {
-            display: flex;
-            justify-content: center;
-            align-items: center; /* 세로 정렬 필요 시 추가 */
-            height: 100%;  /* 필요 시 조절 */
-            margin-top: 10px;
-         }
 
         /* Streamlit 버튼 스타일, 텍스트 줄바꿈 방지 */
         div.stButton > button {

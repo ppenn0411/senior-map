@@ -149,10 +149,14 @@ if 'current_page_name' not in st.session_state:
 title_col, buttons_col = st.columns([3, 7]) # 비율 조정 가능 [제목 컬럼 비율, 버튼 컬럼 비율]
 
 with title_col:
-    # 앱 제목 설정
-    st.markdown("<h1>한눈맵 65<span style='color: red;'><sup>+</sup></span></h1>", unsafe_allow_html=True)
-    # 제목이 버튼 컨테이너와 수직 중앙에 오도록 패딩 조정 (선택 사항)
+    st.markdown("""
+        <h1 style='text-align: left;'>
+            한눈맵 65<span style='color: red;'><sup>+</sup></span>
+        </h1>
+    """, unsafe_allow_html=True)
+
     st.markdown("<div style='height: 30px;'></div>", unsafe_allow_html=True)
+
 
 with buttons_col:
     # 페이지 이동 버튼 생성 (가로 배열)
