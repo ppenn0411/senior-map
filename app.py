@@ -22,7 +22,7 @@ def set_png_as_bg(png_file):
     </style>
     """
     img_base64 = get_base64_of_bin_file("xndx7.png")
-    
+    img_base64 = get_base64_of_bin_file("side_image.png")
     
     html_img = f"""
     <div style="
