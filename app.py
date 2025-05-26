@@ -198,7 +198,7 @@ if current_page_value == "main":
         margin-bottom: 15px;
         text-align: center;
     ">
-        <img src="xndx8.png" alt="일반 이미지" style="max-width: 100%; height: auto;"/>
+       st.image("xndx8.png", use_column_width=True)
     </div>
     """, unsafe_allow_html=True)
 
