@@ -21,7 +21,7 @@ def set_png_as_bg(png_file):
     }}
     </style>
     """
-    img_base64 = get_base64_of_bin_file("xndx7.png")
+    img_base64 = get_base64_of_bin_file("xndx6.png")
     # 이미지 base64 인코딩
 
 
@@ -35,20 +35,6 @@ def set_png_as_bg(png_file):
         <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
     </div>
     """
-    html_img_sidebar = f"""
-    <div style="
-        background-color: black;
-        padding: 10px;
-        margin-bottom: 15px;
-        text-align: center;
-    ">
-        <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
-    </div>
-    """
-
-# 사이드바에 이미지 출력
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-
 
 st.set_page_config(page_title="한눈맵65+", layout="wide")
 
@@ -217,7 +203,7 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    img_base64 = get_base64_of_bin_file("xndx7.png")
+    img_base64 = get_base64_of_bin_file("xndx6.png")
     html_img = f"""
     <div style="
         background-color: black;
