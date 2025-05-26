@@ -185,7 +185,6 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    st.image("xndx8.png", width=200)
     
     st.markdown("""
         <div style="
