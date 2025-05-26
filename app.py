@@ -35,19 +35,20 @@ def set_png_as_bg(png_file):
         <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
     </div>
     """
-    html_img_sidebar = f"""
-    <div style="
-        background-color: black;
-        padding: 10px;
-        margin-bottom: 15px;
-        text-align: center;
-    ">
-        <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
-    </div>
+    # 사이드바에 이미지 HTML 코드 작성
+    sidebar_img = """
+        <div style="
+            background-color: black;
+            padding: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        ">
+            <img src="side_image.png" width="100%" style="border-radius: 8px;">
+        </div>
     """
 
-# 사이드바에 이미지 출력
-    st.markdown(page_bg_img, unsafe_allow_html=True)
+    # 사이드바에 이미지 출력
+    st.sidebar.markdown(sidebar_img, unsafe_allow_html=True)
 
 
 st.set_page_config(page_title="한눈맵65+", layout="wide")
