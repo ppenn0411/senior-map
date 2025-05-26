@@ -21,7 +21,7 @@ def set_png_as_bg(png_file):
     }}
     </style>
     """
-    img_base64 = get_base64_of_bin_file("xndx8.png")
+    img_base64 = get_base64_of_bin_file("xndx7.png")
 
     html_img = f"""
     <div style="
@@ -203,7 +203,7 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    img_base64 = get_base64_of_bin_file("xndx8.png")
+    img_base64 = get_base64_of_bin_file("xndx7.png")
     html_img = f"""
     <div style="
         background-color: black;
@@ -215,7 +215,7 @@ if current_page_value == "main":
     </div>
     """
     st.markdown(html_img, unsafe_allow_html=True)
-    st.write("퉁 퉁 퉁 퉁 퉁 퉁 퉁 퉁 사후르르.")
+    
 
 
 
