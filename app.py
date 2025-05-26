@@ -22,7 +22,9 @@ def set_png_as_bg(png_file):
     </style>
     """
     img_base64 = get_base64_of_bin_file("xndx7.png")
-
+    # 이미지 base64 인코딩
+    img_base64 = get_base64_of_bin_file("side_image.png")
+    
     html_img = f"""
     <div style="
         background-color: black;
@@ -33,6 +35,18 @@ def set_png_as_bg(png_file):
         <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
     </div>
     """
+    html_img_sidebar = f"""
+    <div style="
+        background-color: black;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    ">
+        <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
+    </div>
+    """
+
+# 사이드바에 이미지 출력
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
