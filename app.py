@@ -215,7 +215,7 @@ if current_page_value == "main":
     </div>
     """
     st.markdown(html_img, unsafe_allow_html=True)
-    st.write("이곳은 메인 페이지입니다.")
+    st.write("퉁 퉁 퉁 퉁 퉁 퉁 퉁 퉁 사후르르.")
 
 
 
