@@ -22,7 +22,8 @@ def set_png_as_bg(png_file):
     </style>
     """
     img_base64 = get_base64_of_bin_file("xndx7.png")
-    st.sidebar.image("side_image.png", use_column_width=True)
+    # 이미지 base64 인코딩
+    img_base64 = get_base64_of_bin_file("side_image.png")
     
     html_img = f"""
     <div style="
@@ -31,25 +32,22 @@ def set_png_as_bg(png_file):
         margin-bottom: 15px;
         text-align: center;
     ">
-    
         <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
     </div>
     """
-    # 사이드바에 이미지 HTML 코드 작성
-    sidebar_img = """
-        <div style="
-            background-color: black;
-            padding: 10px;
-            margin-bottom: 15px;
-            text-align: center;
-        ">
-            <img src="side_image.png" width="100%" style="border-radius: 8px;">
-        </div>
+    html_img_sidebar = f"""
+    <div style="
+        background-color: black;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    ">
+        <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
+    </div>
     """
 
-    # 사이드바에 이미지 출력
-    st.sidebar.markdown(sidebar_img, unsafe_allow_html=True)
-    
+# 사이드바에 이미지 출력
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 st.set_page_config(page_title="한눈맵65+", layout="wide")
@@ -230,18 +228,7 @@ if current_page_value == "main":
         <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
     </div>
     """
-    # 사이드바 이미지 추가
-    img_base64_sidebar = get_base64_of_bin_file("side_image.png")  # 사이드바용 이미지 파일명
-    html_img_sidebar = f"""
-    <div style="
-        background-color: black;
-        padding: 10px;
-        margin-bottom: 15px;
-        text-align: center;
-    ">
-        <img src="data:image/png;base64,{img_base64_sidebar}" style="max-width: 100%; height: auto;" />
-    </div>
-    """
+    
     st.markdown(html_img, unsafe_allow_html=True)
     
 
