@@ -131,10 +131,10 @@ set_png_as_bg("background.png")
 # 페이지 목록 정의 (이름: 값 형태 유지)
 pages = {
     "홈": "main",
-    "의료 수요-공급 격차 맵": "page1",
-    "의료 수요 맵": "page2",
-    "의료 공급 맵": "page3",
-    "의원 분포 맵": "page4",
+    "의료 수요 맵": "page1",
+    "의료 공급 맵": "page2",
+    "의원 분포 맵": "page3",
+    "의료 수요-공급 격차 맵": "page4",
 }
 
 # 페이지 이름 목록
@@ -207,14 +207,14 @@ elif current_page_value == "page1":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요-공급 격차 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요 맵</h2>
         </div>
     """, unsafe_allow_html=True)
-    # 이곳은 첫 번째 페이지입니다. 대신 iframe 삽입
+    # 이곳은 첫첫 번째 페이지입니다. 대신 iframe 삽입
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
-        <iframe title="page1" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiOWJiN2QyNGUtNjIxOC00NTI2LTk1ZWYtMmI2MzY3ZWY5ODg4IiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="page3" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiZTBjZjNhYTctYmQ2Mi00ZDk3LWI3MjAtYThkOTM4ZTI1MjE2IiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
         ''', unsafe_allow_html=True
     )
@@ -228,14 +228,14 @@ elif current_page_value == "page2":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의원 공급 맵</h2>
         </div>
     """, unsafe_allow_html=True)
-    # 이곳은 두 번째 페이지입니다. 대신 iframe 삽입
+    # 이곳은 두두 번째 페이지입니다. 대신 iframe 삽입
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
-        <iframe title="page3" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiZTBjZjNhYTctYmQ2Mi00ZDk3LWI3MjAtYThkOTM4ZTI1MjE2IiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="page3" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiOGMyZGZiNjgtY2Y1My00Njc2LWJkNzMtNmYxNmU5NWMxYzFiIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
         ''', unsafe_allow_html=True
     )
@@ -249,14 +249,14 @@ elif current_page_value == "page3":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의원 공급 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 분포 맵</h2>
         </div>
     """, unsafe_allow_html=True)
-    # 이곳은 세 번째 페이지입니다. 대신 iframe 삽입
+    # 이곳은 세세 번째 페이지입니다. 대신 iframe 삽입
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
-        <iframe title="page3" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiOGMyZGZiNjgtY2Y1My00Njc2LWJkNzMtNmYxNmU5NWMxYzFiIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="page4" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiODdmOTQ1NzEtYWIwMy00ZjYyLTg5ZWYtM2Q3ZGIyODliYjgzIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
         ''', unsafe_allow_html=True
     )
@@ -270,14 +270,14 @@ elif current_page_value == "page4":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 분포 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요-공급 격차 맵</h2>
         </div>
     """, unsafe_allow_html=True)
-    # 이곳은 네 번째 페이지입니다. 대신 iframe 삽입
+    # 이곳은 네네 번째 페이지입니다. 대신 iframe 삽입
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
-        <iframe title="page4" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiODdmOTQ1NzEtYWIwMy00ZjYyLTg5ZWYtM2Q3ZGIyODliYjgzIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="page1" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiOWJiN2QyNGUtNjIxOC00NTI2LTk1ZWYtMmI2MzY3ZWY5ODg4IiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
         ''', unsafe_allow_html=True
     )
