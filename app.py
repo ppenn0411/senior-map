@@ -24,7 +24,7 @@ def set_png_as_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-st.set_page_config(page_title="한눈맵65+", layout="wide")
+    st.set_page_config(page_title="한눈맵65+", layout="wide")
 
 # 사용자 지정 CSS 스타일 (버튼 가로 스크롤, 세로 크기 조절, 컨테이너 배경색, 제목 및 버튼 텍스트 줄바꿈 방지를 위한 수정)
 st.markdown(
@@ -185,6 +185,8 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
+    st.image("xndx8.png", width=200)
+    
     st.markdown("""
         <div style="
             background-color: black; /* 검정색 */
