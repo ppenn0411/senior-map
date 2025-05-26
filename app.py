@@ -21,6 +21,18 @@ def set_png_as_bg(png_file):
     }}
     </style>
     """
+    img_base64 = get_base64_of_bin_file("xndx8.png")
+
+    html_img = f"""
+    <div style="
+        background-color: black;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    ">
+        <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
+    </div>
+    """
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
@@ -191,18 +203,20 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    st.markdown("""
+    img_base64 = get_base64_of_bin_file("xndx8.png")
+    html_img = f"""
     <div style="
         background-color: black;
         padding: 10px;
         margin-bottom: 15px;
         text-align: center;
     ">
-        <img src="xndx8.png" style="max-width: 100%; height: auto;" />
+        <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
     </div>
-    """, unsafe_allow_html=True)
-
+    """
+    st.markdown(html_img, unsafe_allow_html=True)
     st.write("이곳은 메인 페이지입니다.")
+
 
 
 
