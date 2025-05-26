@@ -24,7 +24,7 @@ def set_png_as_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-    st.set_page_config(page_title="한눈맵65+", layout="wide")
+st.set_page_config(page_title="한눈맵65+", layout="wide")
 
 # 사용자 지정 CSS 스타일 (버튼 가로 스크롤, 세로 크기 조절, 컨테이너 배경색, 제목 및 버튼 텍스트 줄바꿈 방지를 위한 수정)
 st.markdown(
@@ -185,7 +185,6 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    
     st.markdown("""
         <div style="
             background-color: black; /* 검정색 */
@@ -211,7 +210,7 @@ elif current_page_value == "page1":
             <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요 맵</h2>
         </div>
     """, unsafe_allow_html=True)
-    # 이곳은 첫첫 번째 페이지입니다. 대신 iframe 삽입
+    # 이곳은 첫 번째 페이지입니다. 대신 iframe 삽입
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
