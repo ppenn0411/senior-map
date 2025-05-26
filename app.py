@@ -131,10 +131,10 @@ set_png_as_bg("background.png")
 # 페이지 목록 정의 (이름: 값 형태 유지)
 pages = {
     "홈": "main",
-    "지역구 격차": "page1",
-    "유병률": "page2",
-    "진료 역량": "page3",
-    "의료기관 분포": "page4",
+    "의료 수요 맵": "page1",
+    "의료 공급 맵": "page2",
+    "의원 분포 맵": "page3",
+    "의료 수요-공급 격차 맵": "page4",
 }
 
 # 페이지 이름 목록
@@ -207,7 +207,7 @@ elif current_page_value == "page1":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 만성질환 수요공급 격차</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요 맵</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 첫 번째 페이지입니다. 대신 iframe 삽입
@@ -228,7 +228,7 @@ elif current_page_value == "page2":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 유병률</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 공급 맵</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 두 번째 페이지입니다. 대신 iframe 삽입
@@ -249,7 +249,7 @@ elif current_page_value == "page3":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 만성질환 진료역량</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의원 분포 맵</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 세 번째 페이지입니다. 대신 iframe 삽입
@@ -270,7 +270,7 @@ elif current_page_value == "page4":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 지역구별 의료기관 분포</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요-공급 격차 맵</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 네 번째 페이지입니다. 대신 iframe 삽입
