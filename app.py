@@ -270,7 +270,7 @@ elif current_page_value == "page4":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2>서울시 지역구별 의료기관 분포포</h2>
+            <h2>서울시 지역구별 의료기관 분포</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 네 번째 페이지입니다. 대신 iframe 삽입
