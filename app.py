@@ -22,8 +22,7 @@ def set_png_as_bg(png_file):
     </style>
     """
     img_base64 = get_base64_of_bin_file("xndx7.png")
-    # 이미지 base64 인코딩
-    img_base64 = get_base64_of_bin_file("side_image.png")
+    
     
     html_img = f"""
     <div style="
@@ -32,6 +31,7 @@ def set_png_as_bg(png_file):
         margin-bottom: 15px;
         text-align: center;
     ">
+    
         <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
     </div>
     """
