@@ -22,7 +22,7 @@ def set_png_as_bg(png_file):
     </style>
     """
     img_base64 = get_base64_of_bin_file("xndx7.png")
-    img_base64 = get_base64_of_bin_file("side_image.png")
+    st.sidebar.image("side_image.png", use_column_width=True)
     
     html_img = f"""
     <div style="
@@ -49,6 +49,7 @@ def set_png_as_bg(png_file):
 
     # 사이드바에 이미지 출력
     st.sidebar.markdown(sidebar_img, unsafe_allow_html=True)
+    
 
 
 st.set_page_config(page_title="한눈맵65+", layout="wide")
