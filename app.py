@@ -228,10 +228,10 @@ elif current_page_value == "page2":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의원 공급 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료료 공급 맵</h2>
         </div>
     """, unsafe_allow_html=True)
-    # 이곳은 두두 번째 페이지입니다. 대신 iframe 삽입
+    # 이곳은 두 번째 페이지입니다. 대신 iframe 삽입
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
@@ -252,7 +252,7 @@ elif current_page_value == "page3":
             <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 분포 맵</h2>
         </div>
     """, unsafe_allow_html=True)
-    # 이곳은 세세 번째 페이지입니다. 대신 iframe 삽입
+    # 이곳은 세 번째 페이지입니다. 대신 iframe 삽입
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
