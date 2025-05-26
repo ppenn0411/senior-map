@@ -235,7 +235,7 @@ elif current_page_value == "page2":
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
-        <iframe title="page3" width="95%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiZTBjZjNhYTctYmQ2Mi00ZDk3LWI3MjAtYThkOTM4ZTI1MjE2IiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="page3" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiZTBjZjNhYTctYmQ2Mi00ZDk3LWI3MjAtYThkOTM4ZTI1MjE2IiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
         ''', unsafe_allow_html=True
     )
@@ -256,7 +256,7 @@ elif current_page_value == "page3":
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
-        <iframe title="page3" width="95%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiOGMyZGZiNjgtY2Y1My00Njc2LWJkNzMtNmYxNmU5NWMxYzFiIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="page3" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiOGMyZGZiNjgtY2Y1My00Njc2LWJkNzMtNmYxNmU5NWMxYzFiIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
         ''', unsafe_allow_html=True
     )
@@ -277,7 +277,7 @@ elif current_page_value == "page4":
     st.markdown(
         '''
         <div style="display: flex; justify-content: center;">
-        <iframe title="page4" width="95%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiODdmOTQ1NzEtYWIwMy00ZjYyLTg5ZWYtM2Q3ZGIyODliYjgzIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="page4" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiODdmOTQ1NzEtYWIwMy00ZjYyLTg5ZWYtM2Q3ZGIyODliYjgzIiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
         ''', unsafe_allow_html=True
     )
