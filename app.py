@@ -143,7 +143,7 @@ pages = {
     "홈": "main",
     "의료 수요 맵": "page1",
     "의료 공급 맵": "page2",
-    "의료 수요-공급 격차 맵": "page3",
+    "의료 공급대비 수요 격차 맵": "page3",
     "의원 분포 맵": "page4",
     
 }
@@ -263,7 +263,7 @@ elif current_page_value == "page3":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요-공급 격차 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 공급대비 수요 격차 맵</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 세 번째 페이지입니다. 대신 iframe 삽입
