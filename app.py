@@ -200,34 +200,16 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    if current_page_value == "main":
-    # 기존 이미지 출력 코드 유지
-        st.markdown(f"""
-            <div style="
-                background-color: black;
-                padding: 10px;
-                margin-bottom: 15px;
-                text-align: center;
-            ">
-                <img src="{image_base64}" style="width: 1250px; height: 800px; object-fit: contain;"/>
-            </div>
-            """, unsafe_allow_html=True)
-
-    # 여기서 page1 ~ page4 버튼을 가로로 배치
-    cols = st.columns(4)
-    page_buttons = ["page1", "page2", "page3", "page4"]
-    page_labels = ["의료 수요 맵", "의료 공급 맵", "의료 수요-공급 격차 맵", "의원 분포 맵"]
-
-    for i, page_key in enumerate(page_buttons):
-        with cols[i]:
-            if st.button(page_labels[i]):
-                # 페이지 전환
-                # pages 딕셔너리에서 키를 이름으로 변환
-                for name, val in pages.items():
-                    if val == page_key:
-                        st.session_state.current_page_name = name
-                        break
-                st.experimental_rerun()
+    st.markdown(f"""
+    <div style="
+        background-color: black;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    ">
+        <img src="{image_base64}" style="width: 1250px; height: 800px; object-fit: contain;"/>
+    </div>
+    """, unsafe_allow_html=True)
 
 elif current_page_value == "page1":
     # 페이지 1 헤더에 검정색 배경 박스 추가
