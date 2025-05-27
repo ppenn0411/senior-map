@@ -22,6 +22,16 @@ def set_png_as_bg(png_file):
     </style>
     """
     st.markdown(page_bg_img, unsafe_allow_html=True)
+    
+#이미지 파일 패치치   
+def get_base64_image(image_path):
+    with open(image_path, "rb") as img_file:
+        b64_encoded = base64.b64encode(img_file.read()).decode()
+    return f"data:image/png;base64,{b64_encoded}"
+
+# Base64 인코딩된 이미지 경로
+image_base64 = get_base64_image("xndx7.png")
+
 
 
 st.set_page_config(page_title="한눈맵65+", layout="wide")
@@ -190,17 +200,17 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    st.markdown("""
-        <div style="
-            background-color: black; /* 검정색 */
-            padding: 10px; /* 내부 여백 */
-            margin-bottom: 15px; /* 아래쪽 간격 */
-            text-align: center; /* 텍스트 중앙 정렬 */
-        ">
-            <h2></h2> <!-- Streamlit 헤더 대신 h2 사용 -->
-        </div>
+    st.markdown(f"""
+    <div style="
+        background-color: black;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    ">
+        <img src="{image_base64}" width="200"/>
+    </div>
     """, unsafe_allow_html=True)
-    
+
     st.write("이곳은 메인 페이지입니다.")
 
 elif current_page_value == "page1":
