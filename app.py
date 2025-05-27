@@ -42,7 +42,7 @@ st.markdown(
     <style>
         /* Streamlit 제목 글자 크기 및 위치 조절 */
         .stApp h1 {
-            font-size: 5em !important; /* 제목 글자 크기 설정 (원하는 크기로 조절 가능) */
+            font-size: 3em !important; /* 제목 글자 크기 설정 (원하는 크기로 조절 가능) */
             margin-top: -30px !important; /* 제목을 위로 약간 올립니다 (값 조절 가능) */
             /* white-space: nowrap; */ /* 줄바꿈 방지 */
             /* overflow: hidden; */ /* 넘치는 텍스트 숨김 */
@@ -59,6 +59,7 @@ st.markdown(
              white-space: nowrap; /* 줄바꿈 방지 */
              overflow: hidden; /* 넘치는 텍스트 숨김 */
              text-overflow: ellipsis; /* 넘치는 텍스트를 말줄임표로 표시 */
+             font-size: 20px; /* 글자 크기 키우기 */
         }
 
         /* 버튼들을 담는 내부 st.columns 컨테이너에 Flexbox 및 스크롤 설정 */
