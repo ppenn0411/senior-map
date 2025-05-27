@@ -207,7 +207,7 @@ if current_page_value == "main":
         margin-bottom: 15px;
         text-align: center;
     ">
-        <img src="{image_base64}" style="width: 1250px; height: 8000px; object-fit: contain;"/>
+        <img src="{image_base64}" style="width: 1250px; height: 800px; object-fit: contain;"/>
     </div>
     """, unsafe_allow_html=True)
 
