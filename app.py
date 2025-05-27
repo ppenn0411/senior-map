@@ -21,22 +21,7 @@ def set_png_as_bg(png_file):
     }}
     </style>
     """
-    img_base64 = get_base64_of_bin_file("xndx7.png")
-    # 이미지 base64 인코딩
-
-
-    html_img = f"""
-    <div style="
-        background-color: black;
-        padding: 10px;
-        margin-bottom: 15px;
-        text-align: center;
-    ">
-        <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
-    </div>
-    """
-
-
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 st.set_page_config(page_title="한눈맵65+", layout="wide")
@@ -54,7 +39,6 @@ st.markdown(
             /* text-overflow: ellipsis; */ /* 넘치는 텍스트를 말줄임표로 표시 */
             text-align: center; /* 제목 가운데 정렬 */
         }
-        
 
         /* Streamlit 버튼 스타일, 텍스트 줄바꿈 방지 */
         div.stButton > button {
@@ -206,23 +190,18 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    img_base64 = get_base64_of_bin_file("xndx7.png")
-    html_img = f"""
-    <div style="
-        background-color: black;
-        padding: 10px;
-        margin-bottom: 15px;
-        text-align: center;
-    ">
-        <img src="data:image/png;base64,{img_base64}" style="max-width: 100%; height: auto;" />
-    </div>
-    """
+    st.markdown("""
+        <div style="
+            background-color: black; /* 검정색 */
+            padding: 10px; /* 내부 여백 */
+            margin-bottom: 15px; /* 아래쪽 간격 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+        ">
+            <h2></h2> <!-- Streamlit 헤더 대신 h2 사용 -->
+        </div>
+    """, unsafe_allow_html=True)
     
-    st.markdown(html_img, unsafe_allow_html=True)
-    
-
-
-
+    st.write("이곳은 메인 페이지입니다.")
 
 elif current_page_value == "page1":
     # 페이지 1 헤더에 검정색 배경 박스 추가
