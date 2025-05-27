@@ -207,11 +207,7 @@ if current_page_value == "main":
         margin-bottom: 15px;
         text-align: center;
     ">
-        <body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f8f8f8;">
-  <img src="{image_base64}" style="max-width: 90vw; max-height: 90vh; object-fit: contain; border: 1px solid #ccc; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"/>
-</body>
-
-
+        <img src="{image_base64}" style="width: 1500px; height: 1000px; object-fit: contain;"/>
     </div>
     """, unsafe_allow_html=True)
 
