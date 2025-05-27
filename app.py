@@ -198,37 +198,18 @@ st.markdown("""
  """, unsafe_allow_html=True)
 if current_page_value == "main":
 
-    def set_page(page_value):
-        st.session_state.current_page_value = page_value
-
+    
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    if st.session_state.current_page_value == "main":
-        st.markdown("""
-            <div style="
-                background-color: black;
-                padding: 10px;
-                margin-bottom: 15px;
-                text-align: center;
-                color: white;
-            ">
-                <h1>메인 페이지</h1>
-            </div>
-        """, unsafe_allow_html=True)
-
-    # 버튼을 가로로 나열하고 싶으면 columns 사용 가능
-    cols = st.columns(4)
-    with cols[0]:
-        if st.button("의료 수요 맵"):
-            set_page("page1")
-    with cols[1]:
-        if st.button("의료 공급 맵"):
-            set_page("page2")
-    with cols[2]:
-        if st.button("의료 수요-공급 격차 맵"):
-            set_page("page3")
-    with cols[3]:
-        if st.button("의원 분포 맵"):
-            set_page("page4")
+    st.markdown(f"""
+    <div style="
+        background-color: black;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    ">
+        <img src="{image_base64}" style="width: 1250px; height: 800px; object-fit: contain;"/>
+    </div>
+    """, unsafe_allow_html=True)
 
 elif current_page_value == "page1":
     # 페이지 1 헤더에 검정색 배경 박스 추가
