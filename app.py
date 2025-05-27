@@ -187,6 +187,25 @@ with buttons_col:
 # 선택된 페이지 이름에 해당하는 페이지 '값'을 찾아서 내용 표시
 current_page_value = pages[st.session_state.current_page_name]
 
+# CSS 스타일 삽입
+st.markdown(
+    """
+    <style>
+    div.stButton > button {
+        font-size: 20px !important;
+        width: 100%;
+        height: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
  # 서비스 개요를 위한 검정색 박스
 st.markdown("""
     <div style="
