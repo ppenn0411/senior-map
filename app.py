@@ -207,7 +207,7 @@ if current_page_value == "main":
         margin-bottom: 15px;
         text-align: center;
     ">
-        <img src="{image_base64}" style="width: 500px; height: auto;"/>
+        <img src="{image_base64}" style="width: 1000px; height: 600px; object-fit: contain;"/>
     </div>
     """, unsafe_allow_html=True)
 
@@ -223,6 +223,7 @@ elif current_page_value == "page1":
             <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요 맵</h2>
         </div>
     """, unsafe_allow_html=True)
+    
     # 이곳은 첫 번째 페이지입니다. 대신 iframe 삽입
     st.markdown(
         '''
