@@ -207,6 +207,7 @@ if current_page_value == "main":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요 맵</h2>
         </div>
     """, unsafe_allow_html=True)
     
