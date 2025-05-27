@@ -207,11 +207,9 @@ if current_page_value == "main":
         margin-bottom: 15px;
         text-align: center;
     ">
-        <img src="{image_base64}" width="200"/>
+        <img src="{image_base64}" style="width: 500px; height: auto;"/>
     </div>
     """, unsafe_allow_html=True)
-
-    st.write("이곳은 메인 페이지입니다.")
 
 elif current_page_value == "page1":
     # 페이지 1 헤더에 검정색 배경 박스 추가
