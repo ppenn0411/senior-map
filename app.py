@@ -59,7 +59,7 @@ st.markdown(
              white-space: nowrap; /* 줄바꿈 방지 */
              overflow: hidden; /* 넘치는 텍스트 숨김 */
              text-overflow: ellipsis; /* 넘치는 텍스트를 말줄임표로 표시 */
-             font-size: 20px; /* 글자 크기 키우기 */
+             font-size: 40px; /* 글자 크기 키우기 */
         }
 
         /* 버튼들을 담는 내부 st.columns 컨테이너에 Flexbox 및 스크롤 설정 */
