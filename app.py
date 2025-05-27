@@ -215,6 +215,7 @@ elif current_page_value == "page1":
     # 페이지 1 헤더에 검정색 배경 박스 추가
     st.markdown("""
         <div style="
+            background-color: black; /* 검정색 */
             padding: 10px; /* 내부 여백 */
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
