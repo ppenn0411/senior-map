@@ -198,7 +198,9 @@ st.markdown("""
  """, unsafe_allow_html=True)
 if current_page_value == "main":
 
-    
+    def set_page(page_value):
+        st.session_state.current_page_value = page_value
+
     # 메인 페이지 헤더에 군청색 배경 박스 추가
     if st.session_state.current_page_value == "main":
         st.markdown("""
