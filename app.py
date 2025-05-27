@@ -200,25 +200,16 @@ if current_page_value == "main":
 
     
     # 메인 페이지 헤더에 군청색 배경 박스 추가
-    st.markdown("""
-        <div style="
-            background-color: black; /* 검정색 */
-            padding: 10px; /* 내부 여백 */
-            margin-bottom: 15px; /* 아래쪽 간격 */
-            text-align: center; /* 텍스트 중앙 정렬 */
-        ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요 맵</h2>
-        </div>
+    st.markdown(f"""
+    <div style="
+        background-color: black;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    ">
+        <img src="{image_base64}" style="width: 1250px; height: 800px; object-fit: contain;"/>
+    </div>
     """, unsafe_allow_html=True)
-    
-    # 이곳은 첫 번째 페이지입니다. 대신 iframe 삽입
-    st.markdown(
-        '''
-        <div style="display: flex; justify-content: center;">
-        <iframe title="page1" width="100%" height="750" src="https://app.powerbi.com/view?r=eyJrIjoiZTBjZjNhYTctYmQ2Mi00ZDk3LWI3MjAtYThkOTM4ZTI1MjE2IiwidCI6IjAyZjU1YjU3LWZmMzEtNGMzZC1hYzA0LTBhMjQwOGIxNDgyMCJ9" frameborder="0" allowFullScreen="true"></iframe>
-        </div>
-        ''', unsafe_allow_html=True
-    )
 
 elif current_page_value == "page1":
     # 페이지 1 헤더에 검정색 배경 박스 추가
