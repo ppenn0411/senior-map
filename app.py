@@ -30,7 +30,7 @@ def get_base64_image(image_path):
     return f"data:image/png;base64,{b64_encoded}"
 
 # Base64 인코딩된 이미지 경로
-image_base64 = get_base64_image("map5.png")
+image_base64 = get_base64_image("map.png")
 
 
 
@@ -145,7 +145,7 @@ pages = {
     "의료 수요 맵": "page1",
     "의료 공급 맵": "page2",
     "의료 취약도 맵": "page3",
-    "의원 분포 맵": "page4",
+    "의원 등급 분포 맵": "page4",
     
 }
 
@@ -286,7 +286,7 @@ elif current_page_value == "page4":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 분포 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의원 등급 분포 맵</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 네 번째 페이지입니다. 대신 iframe 삽입
