@@ -30,7 +30,7 @@ def get_base64_image(image_path):
     return f"data:image/png;base64,{b64_encoded}"
 
 # Base64 인코딩된 이미지 경로
-image_base64 = get_base64_image("map.png")
+image_base64 = get_base64_image("map7.png")
 
 
 
