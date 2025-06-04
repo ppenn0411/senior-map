@@ -222,7 +222,7 @@ elif current_page_value == "page1":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 수요 현황</h2>
         </div>
     """, unsafe_allow_html=True)
     
@@ -244,7 +244,7 @@ elif current_page_value == "page2":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 공급 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 공급 현황</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 두 번째 페이지입니다. 대신 iframe 삽입
@@ -265,7 +265,7 @@ elif current_page_value == "page3":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 취약 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의료 취약지역 현황</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 세 번째 페이지입니다. 대신 iframe 삽입
@@ -286,7 +286,7 @@ elif current_page_value == "page4":
             margin-bottom: 15px; /* 아래쪽 간격 */
             text-align: center; /* 텍스트 중앙 정렬 */
         ">
-            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의원 등급 분포 맵</h2>
+            <h2 style="color: white; text-align: center;">서울시 고령층 만성질환 의원 등급 분포 현황</h2>
         </div>
     """, unsafe_allow_html=True)
     # 이곳은 네 번째 페이지입니다. 대신 iframe 삽입
